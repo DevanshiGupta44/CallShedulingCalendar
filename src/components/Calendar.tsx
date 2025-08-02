@@ -296,7 +296,6 @@ const Calendar = () => {
                                     {hasBooking && (
                                         <ul className="mt-1 space-y-1">
                                             {getBookingsOnDate(day).map(booking => {
-                                                const clientName = clients.find(c => c.id === booking.clientId)?.name;
                                                 return (
                                                     <li key={booking.id} className="text-xs text-red-600 truncate">
                                                         <span className="font-medium">{booking.callType}</span>
