@@ -2,13 +2,13 @@
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyACwB4pRkYCZDXjE8VvhwixxTuc1N-UB2Q",
-  authDomain: "healthtickcalender.firebaseapp.com",
-  projectId: "healthtickcalender",
-  storageBucket: "healthtickcalender.firebasestorage.app",
-  messagingSenderId: "913024993722",
-  appId: "1:913024993722:web:3ba674c74afe63f1e5f583",
-  measurementId: "G-BXEV0H9XMC"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
